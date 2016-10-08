@@ -1,6 +1,12 @@
 # lfqueue
 Simple Lock-Free Queue implemented in C based on [this paper](https://www.research.ibm.com/people/m/michael/podc-1996.pdf).
 
+# Status
+##### These features are almost finished and will be added soon along with new lock-free data structures:
+
+1. Hazard pointers based on [Maged Michael - Safe Memory Reclamation for Lock-Free Objects](https://www.research.ibm.com/people/m/michael/ieeetpds-2004.pdf)
+2. Memory Pool for reusing objects
+
 # Example
     #include <stdio.h>
     #include <stdlib.h>
@@ -72,7 +78,7 @@ Simple Lock-Free Queue implemented in C based on [this paper](https://www.resear
     }
 
 # TODOs
-1. Memory Pool.
-2. Hazard Pointer.
+1. Memory Pool. (done)
+2. Hazard Pointer. (done)
 3. Migrating to C11.
 4. [Lock Free Dynamic Memory Allocation](https://www.research.ibm.com/people/m/michael/pldi-2004.pdf)
